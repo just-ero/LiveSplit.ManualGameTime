@@ -1,7 +1,8 @@
-﻿using LiveSplit.Delta;
+﻿using System;
+
+using LiveSplit.Delta;
 using LiveSplit.Model;
 using LiveSplit.UI.Components;
-using System;
 
 [assembly: ComponentFactory(typeof(ManualGameTimeFactory))]
 
@@ -15,7 +16,10 @@ namespace LiveSplit.Delta
 
         public ComponentCategory Category => ComponentCategory.Control;
 
-        public IComponent Create(LiveSplitState state) => new ManualGameTimeComponent(state);
+        public IComponent Create(LiveSplitState state)
+        {
+            return new ManualGameTimeComponent(state);
+        }
 
         public string UpdateName => ComponentName;
 

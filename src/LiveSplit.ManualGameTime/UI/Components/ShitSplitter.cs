@@ -1,7 +1,8 @@
-﻿using LiveSplit.Model;
-using LiveSplit.UI.Components;
-using System;
+﻿using System;
 using System.Windows.Forms;
+
+using LiveSplit.Model;
+using LiveSplit.UI.Components;
 
 namespace LiveSplit.ManualGameTime.UI.Components
 {
